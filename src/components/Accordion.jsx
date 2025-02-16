@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import faqs from "../data/faqs.json"; // Importing mock FAQ data
+import faqs from "../data/Faqs.json"; // Importing mock FAQ data
 import './Accordion.css';  // Importing external CSS file for styles
 
 const Accordion = () => {
