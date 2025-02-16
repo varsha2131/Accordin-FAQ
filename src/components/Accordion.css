@@ -1,105 +1,111 @@
 /* Container for the whole accordion */
 .accordion-container {
-    width: 30%; /* Smaller width for a more compact container */
-    margin: 20px auto;
-    font-family: 'Arial', sans-serif;
-    text-align: left;
-    padding: 15px; /* Reduced padding to make it smaller */
-    background-color: #ffffff; /* Background to make the whole box visible */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
-  }
-  
-  /* Title of the Accordion */
-  .accordion-title {
-    font-size: 1.5rem; /* Reduced font size for smaller box */
-    font-weight: bold;
-    margin-bottom: 15px; /* Adjusted margin */
-    color: #333;
-  }
-  
-  /* Style for individual FAQ items */
-  .faq-item {
-    margin-bottom: 8px; /* Smaller margin between items */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 8px; /* Reduced padding */
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Style for FAQ question */
-  /* Style for FAQ question */
+  width: 30%; /* Smaller width for a more compact container */
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  padding: 15px; /* Reduced padding to make it smaller */
+  background-color: #ffffff; /* Background to make the whole box visible */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+}
+
+/* Title of the Accordion */
+.accordion-title {
+  font-size: 1.5rem; /* Reduced font size for smaller box */
+  font-weight: bold;
+  margin-bottom: 15px; /* Adjusted margin */
+  color: #FF6347; /* Orange color */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
+  padding: 8px; /* Added padding for better clickable area */
+  border-radius: 8px; /* Slightly rounded corners for the title */
+}
+
+/*for accordion title */
+.accordion-title {
+  color: #FF4500; /* Darker orange on hover */
+  background-color: #ffe4e1; /* Light background color on hover for the heading */
+}
+
+/* Style for individual FAQ items */
+.faq-item {
+  margin-bottom: 8px; /* Smaller margin between items */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px; /* Reduced padding */
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Style for FAQ question */
 .faq-question {
-    font-size: 1rem; /* Smaller font size */
-    font-weight: 600;
-    color: #000000; /* Changed to black */
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  
-  /* Style for FAQ answer */
-  .faq-answer {
-    margin-top: 8px; /* Adjusted margin for answer */
-    color: #555;
-    font-size: 0.9rem; /* Slightly smaller font size */
-    line-height: 1.4;
-  }
-  
-  /* Hover effect on question */
-  .faq-question:hover {
-    color: #007BFF; /* Change color on hover */
-  }
-  
-  /* Enhanced hover effect for FAQ items */
-  .faq-item:hover {
-    background-color: #f1f1f1; /* Subtle background color change on hover */
-    box-shadow: 0 4px 10px rgba(247, 244, 244, 0.2); /* Slightly stronger shadow when hovered */
-  }
-  /* Accordion.css */
+  font-size: 1rem; /* Smaller font size */
+  font-weight: 600;
+  color: black; /* Orange color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style for FAQ answer */
+.faq-answer {
+  margin-top: 8px; /* Adjusted margin for answer */
+  color: black; /* Orange color */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  line-height: 1.4;
+}
+
+/* Hover effect on question */
+.faq-question:hover {
+  color: #FF4500; /* Darker orange on hover */
+}
+
+/* Enhanced hover effect for FAQ items */
+.faq-item:hover {
+  background-color: #f1f1f1; /* Subtle background color change on hover */
+  box-shadow: 0 4px 10px rgba(247, 244, 244, 0.2); /* Slightly stronger shadow when hovered */
+}
+
+/* Accordion.css */
 
 /* Basic styling for the question text */
 .faq-question {
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Styling the arrow */
-  .faq-arrow {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 10px solid #000; /* Default down arrow */
-    transition: transform 0.3s ease;
-  }
-  
-  /* When the FAQ is open, rotate the arrow */
-  .faq-arrow.open {
-    transform: rotate(180deg); /* Rotating the arrow to point up */
-  }
-  
-  /* Optional: Styling for the accordion container */
-  .accordion-container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Styling for the FAQ answer */
-  .faq-answer {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling the arrow */
+.faq-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid black; /* Orange color arrow */
+  transition: transform 0.3s ease;
+}
+
+/* When the FAQ is open, rotate the arrow */
+.faq-arrow.open {
+  transform: rotate(90deg); /* Rotating the arrow to point right */
+}
+
+/* Optional: Styling for the accordion container */
+.accordion-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the FAQ answer */
+.faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: blue; /* Orange color */
+}

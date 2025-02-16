@@ -4,7 +4,7 @@ import Accordion from "./components/Accordion";
 function App() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>React Accordion App</h1>
+      <h1 style={{ textAlign: "center", fontSize: "2rem", color: "black", marginBottom: "20px" }}>React Accordion</h1>
       <Accordion />
     </div>
   );
